@@ -105,6 +105,20 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Identity\Infrastructure.Identity.csproj">
+      <Project>{f91cdc0f-5d67-431a-9d63-17436b3b6a9f}</Project>
+      <Name>Infrastructure.Identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.IoC\Infrastructure.IoC.csproj">
+      <Project>{045070b7-87bd-4f8e-88e3-a55db76cedcb}</Project>
+      <Name>Infrastructure.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
+      <Project>{8271a9ff-b3cb-4a9e-a5fb-fcdc1ed6a9c1}</Project>
+      <Name>Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

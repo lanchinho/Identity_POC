@@ -28,7 +28,7 @@ namespace Infrastructure.Identity.Configuration
                 var smtpClient = new SmtpClient( "smtp.gmail.com", Convert.ToInt32(587));
                 //var credentials = new NetworkCredential(ConfigurationManager.AppSettings["ContaDeEmail"],
                 //    ConfigurationManager.AppSettings["SenhaEmail"]);
-                var credentials = new NetworkCredential("guilherme@uniriotec.com", "12345derp");
+                var credentials = new NetworkCredential("derpprogrammertes@gmail.com", "12345derp"); //TODO Definir uma senha melhor depois
                 smtpClient.Credentials = credentials;
                 smtpClient.EnableSsl = true;
                 smtpClient.Send(msg);
