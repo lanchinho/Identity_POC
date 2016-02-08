@@ -14,10 +14,9 @@ namespace Infrastructure.Identity.Configuration
         public Task SendAsync(IdentityMessage message)
         {
             // Habilitar o envio de e-mail
-            if (false)
+            if (true)
             {
                 var text = HttpUtility.HtmlEncode(message.Body);
-
                 var msg = new MailMessage { From = new MailAddress("derpprogrammertes@gmail.com", "Admin do Portal") };
 
                 msg.To.Add(new MailAddress(message.Destination));

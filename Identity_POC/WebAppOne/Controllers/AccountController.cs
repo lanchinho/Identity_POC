@@ -67,11 +67,11 @@ namespace WebAppOne.Controllers
                 return View("Error");
             }
             var user = await _userManager.FindByIdAsync(await _signInManager.GetVerifiedUserIdAsync());
-            if (user != null)
-            {
-                ViewBag.Status = "DEMO: Caso o código não chegue via " + provider + " o código é: ";
-                ViewBag.CodigoAcesso = await _userManager.GenerateTwoFactorTokenAsync(user.Id, provider);
-            }
+            //if (user != null)
+            //{
+            //    ViewBag.Status = "DEMO: Caso o código não chegue via " + provider + " o código é: ";
+            //    ViewBag.CodigoAcesso = await _userManager.GenerateTwoFactorTokenAsync(user.Id, provider);
+            //}
             return View(new VerifyCodeViewModel { Provider = provider, ReturnUrl = returnUrl, RememberMe = rememberMe });
         }
 
