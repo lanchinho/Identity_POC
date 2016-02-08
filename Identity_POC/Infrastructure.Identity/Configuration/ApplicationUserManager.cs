@@ -1,5 +1,7 @@
 ﻿using Infrastructure.Identity.Model;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security.DataProtection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,10 +55,10 @@ namespace Infrastructure.Identity.Configuration
             //// Definindo a classe de serviço de SMS
             //SmsService = new SmsService();
 
-            //var provider = new DpapiDataProtectionProvider("Guilherme");
-            //var dataProtector = provider.Create("ASP.NET Identity");
+            var provider = new DpapiDataProtectionProvider("Guilherme");
+            var dataProtector = provider.Create("ASP.NET Identity");
 
-            //UserTokenProvider = new DataProtectorTokenProvider<ApplicationUser>(dataProtector);
+            UserTokenProvider = new DataProtectorTokenProvider<ApplicationUser>(dataProtector);
 
         }
     }

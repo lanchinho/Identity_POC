@@ -8,7 +8,7 @@ namespace Infrastructure.Context
     {
         //TODO: LEmbrar de chamar minha conexão de Conexão
         public Contexto()
-            :base("Conexão")
+            :base("Conexao")
         {
 
         }
