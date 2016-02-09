@@ -1,8 +1,12 @@
-﻿//using Domain.Interface.Repository;
+﻿using Domain.Interface.Repository;
 using Model.Interface.Service;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
-namespace WebAppOne.Controllers
+namespace WebAppTwo.Controllers
 {
     public class UsuariosController : Controller
     {
@@ -10,6 +14,7 @@ namespace WebAppOne.Controllers
 
         public UsuariosController(IUsuarioService usuarioService)
         {
+            //TODO : Isolar Repository em serviços de app.
             _usuarioService = usuarioService;
         }
 

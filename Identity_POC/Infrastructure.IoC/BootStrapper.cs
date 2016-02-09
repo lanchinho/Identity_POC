@@ -6,6 +6,8 @@ using Infrastructure.Identity.Model;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Infrastructure.Identity.Configuration;
 using Microsoft.AspNet.Identity;
+using Model.Interface.Service;
+using AppService.Application_Services;
 
 namespace Infrastructure.IoC
 {
@@ -21,6 +23,7 @@ namespace Infrastructure.IoC
             container.RegisterPerWebRequest<ApplicationSignInManager>();
 
             container.RegisterPerWebRequest<IUsuarioRepository, UsuarioRepository>();
+            container.RegisterPerWebRequest<IUsuarioService, UsuarioService>();
         }
     }
 }

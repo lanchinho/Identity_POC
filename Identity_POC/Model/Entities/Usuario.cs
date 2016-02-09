@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Domain.Entities
-{
+{   //TODO: As demais entidades do identity ( role, claims) também podem ser modeladas no domínio... ?
     public class Usuario
     {
         public Usuario()

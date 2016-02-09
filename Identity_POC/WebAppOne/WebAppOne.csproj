@@ -242,6 +242,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AppService\AppService.csproj">
+      <Project>{1ce0e6d1-28a1-47c0-b695-22c08e3bbe05}</Project>
+      <Name>AppService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure.Identity\Infrastructure.Identity.csproj">
       <Project>{f91cdc0f-5d67-431a-9d63-17436b3b6a9f}</Project>
       <Name>Infrastructure.Identity</Name>
@@ -249,10 +253,6 @@
     <ProjectReference Include="..\Infrastructure.IoC\Infrastructure.IoC.csproj">
       <Project>{045070b7-87bd-4f8e-88e3-a55db76cedcb}</Project>
       <Name>Infrastructure.IoC</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
-      <Project>{8271a9ff-b3cb-4a9e-a5fb-fcdc1ed6a9c1}</Project>
-      <Name>Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Domain.csproj">
       <Project>{b91b3b12-2440-4900-9d9d-6e443428f1bf}</Project>

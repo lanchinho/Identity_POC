@@ -101,6 +101,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AppService\AppService.csproj">
+      <Project>{1ce0e6d1-28a1-47c0-b695-22c08e3bbe05}</Project>
+      <Name>AppService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure.Identity\Infrastructure.Identity.csproj">
       <Project>{f91cdc0f-5d67-431a-9d63-17436b3b6a9f}</Project>
       <Name>Infrastructure.Identity</Name>

@@ -3,21 +3,18 @@ using Microsoft.Owin;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
-using WebActivatorEx;
-using WebAppOne.App_Start;
 using SimpleInjector.Advanced;
+using WebActivatorEx;
+using WebAppTwo.App_Start;
 
 [assembly: PostApplicationStartMethod(typeof(SimpleInjectorInitializer), "Initialize")]
 
-namespace WebAppOne.App_Start
+namespace WebAppTwo.App_Start
 {
-    public static class SimpleInjectorInitializer
+    public class SimpleInjectorInitializer
     {
         public static void Initialize()
         {
